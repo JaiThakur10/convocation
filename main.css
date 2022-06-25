@@ -1,0 +1,48 @@
+.conatiner {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  background: #232323;
+  padding: 2em;
+}
+.conatiner h1 {
+  margin: 0;
+}
+.conatiner p {
+  color: gray;
+}
+
+button {
+  background: #343434;
+  margin-top: 2em;
+  border: none;
+  padding: 1em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  outline: 0;
+  cursor: pointer;
+}
+button:hover {
+  background: #424242;
+}
+.svg {
+  width: 200px;
+  position: absolute;
+  top: -40px;
+  left: -30px;
+  pointer-events: none;
+}
+
+.button:hover {
+  transform: translate(-10px, -10px);
+}
+
+.button:hover::after {
+  transform: translate(5px, 5px);
+}
+
+.button:hover::before {
+  transform: translate(10px, 10px);
+}/*# sourceMappingURL=main.css.map */
