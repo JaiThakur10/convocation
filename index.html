@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="svg hide" id="svg"></div>
+        <h1>INVITATION</h1>
+        <p>You are invited for the BIRTHDAY party . At 7pm on 10th of August</p>
+        <button>ACCEPT</button>
+    </div>
+    <div class="left">
+        <img src="img/LogoMakr-5Xs8eX.png" alt="">
+        <img src="img/LogoMakr-5Xs8eX (1).png" alt="">
+        <img src="img/LogoMakr-11g97e.png" alt=""> 
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.4/lottie.min.js" integrity="sha512-ilxj730331yM7NbrJAICVJcRmPFErDqQhXJcn+PLbkXdE031JJbcK87Wt4VbAK+YY6/67L+N8p7KdzGoaRjsTg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const play = document.querySelector('button');
+        const svgContainer = document.getElementById('svg');
+        const animItem = bodymovin.loadAnimation({
+            wrapper: svgContainer,
+            animType: 'svg',
+            loop: false,
+            autoplay: false,
+            path: 'https://assets9.lottiefiles.com/packages/lf20_tiviyc3p.json' 
+        });
+
+        play.addEventListener('click', () =>{
+            animItem.goToAndPlay(0,true);
+        })
+
+    </script>
+</body>
+</html>

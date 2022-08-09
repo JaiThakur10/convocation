@@ -1,14 +1,24 @@
-.conatiner {
+body {
+  background: rgb(27, 27, 27);
+  margin: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
+}
+
+.container {
   position: relative;
   width: 60%;
   margin: 0 auto;
   background: #232323;
   padding: 2em;
 }
-.conatiner h1 {
+.container h1 {
   margin: 0;
 }
-.conatiner p {
+.container p {
   color: gray;
 }
 
@@ -25,8 +35,12 @@ button {
   cursor: pointer;
 }
 button:hover {
-  background: #424242;
+  background: #09dad0;
 }
+button:active {
+  background: orange;
+}
+
 .svg {
   width: 200px;
   position: absolute;
